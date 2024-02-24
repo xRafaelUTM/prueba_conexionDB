@@ -1,0 +1,20 @@
+USE [prueba]
+GO
+
+/****** Object:  Table [dbo].[productos]    Script Date: 24/02/2024 12:47:01 p. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[productos](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[nombre] [varchar](100) NULL,
+ CONSTRAINT [PK_Table_1] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
